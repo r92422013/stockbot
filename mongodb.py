@@ -5,7 +5,7 @@ import datetime
 
 Authdb='資料庫名稱'
 def constructor():
-    client = pymongo.MongoClient("mongodb+srv://{user}:<password>@cluster0.tbiz4.mongodb.net/myfirstdb?retryWrites=true&w=majority")
+    client = pymongo.MongoClient("mongodb+srv://<你的hostname>:<password>@cluster0.tbiz4.mongodb.net/myfirstdb?retryWrites=true&w=majority")
     db = client[Authdb]
     return db
 
